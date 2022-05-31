@@ -1,0 +1,37 @@
+[2022-05-15 21:40:10,190] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: GCPetlDAG.mkdir_hourly_op 2022-05-15T21:40:06.148075+00:00 [queued]>
+[2022-05-15 21:40:10,200] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: GCPetlDAG.mkdir_hourly_op 2022-05-15T21:40:06.148075+00:00 [queued]>
+[2022-05-15 21:40:10,201] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 21:40:10,201] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-05-15 21:40:10,201] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 21:40:10,205] {taskinstance.py:1087} INFO - Executing <Task(BashOperator): mkdir_hourly_op> on 2022-05-15T21:40:06.148075+00:00
+[2022-05-15 21:40:10,211] {standard_task_runner.py:52} INFO - Started process 49767 to run task
+[2022-05-15 21:40:10,213] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'GCPetlDAG', 'mkdir_hourly_op', '2022-05-15T21:40:06.148075+00:00', '--job-id', '3', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/my_gcpPipeLine.py', '--cfg-path', '/tmp/tmpi4fvkvm_', '--error-file', '/tmp/tmp4nguiq7_']
+[2022-05-15 21:40:10,215] {standard_task_runner.py:77} INFO - Job 3: Subtask mkdir_hourly_op
+[2022-05-15 21:40:10,239] {logging_mixin.py:104} INFO - Running <TaskInstance: GCPetlDAG.mkdir_hourly_op 2022-05-15T21:40:06.148075+00:00 [running]> on host 7190ca705fc5
+[2022-05-15 21:40:10,277] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=msbeni
+AIRFLOW_CTX_DAG_ID=GCPetlDAG
+AIRFLOW_CTX_TASK_ID=mkdir_hourly_op
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-15T21:40:06.148075+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-05-15T21:40:06.148075+00:00
+[2022-05-15 21:40:10,278] {subprocess.py:52} INFO - Tmp dir root location: 
+ /tmp
+[2022-05-15 21:40:10,279] {subprocess.py:63} INFO - Running command: ['bash', '-c', "cd /opt/airflow/dags/data/ && mkdir '2022-05-15'"]
+[2022-05-15 21:40:10,286] {subprocess.py:75} INFO - Output:
+[2022-05-15 21:40:10,290] {subprocess.py:79} INFO - mkdir: cannot create directory ‘2022-05-15’: File exists
+[2022-05-15 21:40:10,290] {subprocess.py:83} INFO - Command exited with return code 1
+[2022-05-15 21:40:10,297] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/bash.py", line 180, in execute
+    raise AirflowException('Bash command failed. The command returned a non-zero exit code.')
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code.
+[2022-05-15 21:40:10,298] {taskinstance.py:1531} INFO - Marking task as FAILED. dag_id=GCPetlDAG, task_id=mkdir_hourly_op, execution_date=20220515T214006, start_date=20220515T214010, end_date=20220515T214010
+[2022-05-15 21:40:10,345] {local_task_job.py:151} INFO - Task exited with return code 1

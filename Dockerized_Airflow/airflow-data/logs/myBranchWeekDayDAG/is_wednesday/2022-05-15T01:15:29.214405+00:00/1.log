@@ -1,0 +1,23 @@
+[2022-05-15 01:15:31,545] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: myBranchWeekDayDAG.is_wednesday 2022-05-15T01:15:29.214405+00:00 [queued]>
+[2022-05-15 01:15:31,557] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: myBranchWeekDayDAG.is_wednesday 2022-05-15T01:15:29.214405+00:00 [queued]>
+[2022-05-15 01:15:31,557] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 01:15:31,557] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-05-15 01:15:31,558] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 01:15:31,572] {taskinstance.py:1087} INFO - Executing <Task(BranchDayOfWeekOperator): is_wednesday> on 2022-05-15T01:15:29.214405+00:00
+[2022-05-15 01:15:31,585] {standard_task_runner.py:52} INFO - Started process 26405 to run task
+[2022-05-15 01:15:31,594] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'myBranchWeekDayDAG', 'is_wednesday', '2022-05-15T01:15:29.214405+00:00', '--job-id', '29', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/my_BranchDayWeekOptDAG.py', '--cfg-path', '/tmp/tmpua86_f9x', '--error-file', '/tmp/tmppe_cb5d7']
+[2022-05-15 01:15:31,601] {standard_task_runner.py:77} INFO - Job 29: Subtask is_wednesday
+[2022-05-15 01:15:31,710] {logging_mixin.py:104} INFO - Running <TaskInstance: myBranchWeekDayDAG.is_wednesday 2022-05-15T01:15:29.214405+00:00 [running]> on host d011519e5366
+[2022-05-15 01:15:31,839] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=myBranchWeekDayDAG
+AIRFLOW_CTX_TASK_ID=is_wednesday
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-15T01:15:29.214405+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-05-15T01:15:29.214405+00:00
+[2022-05-15 01:15:31,840] {skipmixin.py:124} INFO - Following branch ['task_c_bdwo']
+[2022-05-15 01:15:31,866] {skipmixin.py:155} INFO - Skipping tasks ['task_end']
+[2022-05-15 01:15:31,952] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=myBranchWeekDayDAG, task_id=is_wednesday, execution_date=20220515T011529, start_date=20220515T011531, end_date=20220515T011531
+[2022-05-15 01:15:31,999] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-05-15 01:15:32,052] {local_task_job.py:151} INFO - Task exited with return code 0

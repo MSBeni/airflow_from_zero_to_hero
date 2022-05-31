@@ -1,0 +1,22 @@
+[2022-05-15 21:58:45,596] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: GCPetlDAG.extract_data 2022-05-15T21:58:38.600320+00:00 [queued]>
+[2022-05-15 21:58:45,610] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: GCPetlDAG.extract_data 2022-05-15T21:58:38.600320+00:00 [queued]>
+[2022-05-15 21:58:45,610] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 21:58:45,610] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-05-15 21:58:45,610] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 21:58:45,615] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): extract_data> on 2022-05-15T21:58:38.600320+00:00
+[2022-05-15 21:58:45,622] {standard_task_runner.py:52} INFO - Started process 52846 to run task
+[2022-05-15 21:58:45,625] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'GCPetlDAG', 'extract_data', '2022-05-15T21:58:38.600320+00:00', '--job-id', '35', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/my_gcpPipeLine.py', '--cfg-path', '/tmp/tmpz0d7aqi0', '--error-file', '/tmp/tmprtlkukix']
+[2022-05-15 21:58:45,627] {standard_task_runner.py:77} INFO - Job 35: Subtask extract_data
+[2022-05-15 21:58:45,654] {logging_mixin.py:104} INFO - Running <TaskInstance: GCPetlDAG.extract_data 2022-05-15T21:58:38.600320+00:00 [running]> on host 7190ca705fc5
+[2022-05-15 21:58:45,691] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=msbeni
+AIRFLOW_CTX_DAG_ID=GCPetlDAG
+AIRFLOW_CTX_TASK_ID=extract_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-15T21:58:38.600320+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-05-15T21:58:38.600320+00:00
+[2022-05-15 21:58:45,739] {python.py:151} INFO - Done. Returned value was: dags/data/2022-05-15/bitcoin_price.csv
+[2022-05-15 21:58:45,754] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=GCPetlDAG, task_id=extract_data, execution_date=20220515T215838, start_date=20220515T215845, end_date=20220515T215845
+[2022-05-15 21:58:45,772] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-05-15 21:58:45,797] {local_task_job.py:151} INFO - Task exited with return code 0

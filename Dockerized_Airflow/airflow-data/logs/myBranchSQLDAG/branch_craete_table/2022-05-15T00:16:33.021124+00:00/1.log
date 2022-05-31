@@ -1,0 +1,32 @@
+[2022-05-15 00:16:34,021] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: myBranchSQLDAG.branch_craete_table 2022-05-15T00:16:33.021124+00:00 [queued]>
+[2022-05-15 00:16:34,029] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: myBranchSQLDAG.branch_craete_table 2022-05-15T00:16:33.021124+00:00 [queued]>
+[2022-05-15 00:16:34,029] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 00:16:34,029] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-05-15 00:16:34,030] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 00:16:34,040] {taskinstance.py:1087} INFO - Executing <Task(PostgresOperator): branch_craete_table> on 2022-05-15T00:16:33.021124+00:00
+[2022-05-15 00:16:34,044] {standard_task_runner.py:52} INFO - Started process 19162 to run task
+[2022-05-15 00:16:34,047] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'myBranchSQLDAG', 'branch_craete_table', '2022-05-15T00:16:33.021124+00:00', '--job-id', '14', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/my_BranchSQLDAG.py', '--cfg-path', '/tmp/tmpi8h3go2h', '--error-file', '/tmp/tmpc4mq5iwc']
+[2022-05-15 00:16:34,050] {standard_task_runner.py:77} INFO - Job 14: Subtask branch_craete_table
+[2022-05-15 00:16:34,080] {logging_mixin.py:104} INFO - Running <TaskInstance: myBranchSQLDAG.branch_craete_table 2022-05-15T00:16:33.021124+00:00 [running]> on host d011519e5366
+[2022-05-15 00:16:34,111] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=myBranchSQLDAG
+AIRFLOW_CTX_TASK_ID=branch_craete_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-15T00:16:33.021124+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-05-15T00:16:33.021124+00:00
+[2022-05-15 00:16:34,111] {postgres.py:70} INFO - Executing: CREATE TABLE IF NOT EXISTS partners
+(partner_name TEXT NOT NULL,
+partner_status BOOLEAN NOT NULL,
+PRIMARY KEY (partner_name));
+[2022-05-15 00:16:34,116] {base.py:78} INFO - Using connection to: id: ***. Host: ***, Port: 5432, Schema: , Login: ***, Password: ***, extra: {}
+[2022-05-15 00:16:34,118] {dbapi.py:204} INFO - Running statement: CREATE TABLE IF NOT EXISTS partners
+(partner_name TEXT NOT NULL,
+partner_status BOOLEAN NOT NULL,
+PRIMARY KEY (partner_name));, parameters: None
+[2022-05-15 00:16:34,119] {postgres.py:74} INFO - NOTICE:  relation "partners" already exists, skipping
+
+[2022-05-15 00:16:34,125] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=myBranchSQLDAG, task_id=branch_craete_table, execution_date=20220515T001633, start_date=20220515T001634, end_date=20220515T001634
+[2022-05-15 00:16:34,142] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-05-15 00:16:34,178] {local_task_job.py:151} INFO - Task exited with return code 0

@@ -1,0 +1,300 @@
+[2022-05-14 23:49:32,002] {scheduler_job.py:182} INFO - Started process (PID=15966) to work on /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:49:32,003] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/my_BranchSQLDAG.py for tasks to queue
+[2022-05-14 23:49:32,003] {logging_mixin.py:104} INFO - [2022-05-14 23:49:32,003] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:49:32,012] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-05-14 23:49:32,018] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['myBranchCalendarDAG']) retrieved from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:49:32,160] {logging_mixin.py:104} INFO - [2022-05-14 23:49:32,160] {dag.py:1832} INFO - Sync 1 DAGs
+[2022-05-14 23:49:32,168] {logging_mixin.py:104} INFO - [2022-05-14 23:49:32,168] {dag.py:2305} INFO - Setting next_dagrun for myBranchCalendarDAG to 2022-05-14T00:00:00+00:00
+[2022-05-14 23:49:32,175] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/my_BranchSQLDAG.py took 0.175 seconds
+[2022-05-14 23:50:02,542] {scheduler_job.py:182} INFO - Started process (PID=16026) to work on /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:50:02,543] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/my_BranchSQLDAG.py for tasks to queue
+[2022-05-14 23:50:02,543] {logging_mixin.py:104} INFO - [2022-05-14 23:50:02,543] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:50:02,555] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-05-14 23:50:02,564] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['myBranchCalendarDAG']) retrieved from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:50:02,579] {logging_mixin.py:104} INFO - [2022-05-14 23:50:02,579] {dag.py:1832} INFO - Sync 1 DAGs
+[2022-05-14 23:50:02,594] {logging_mixin.py:104} INFO - [2022-05-14 23:50:02,593] {dag.py:2305} INFO - Setting next_dagrun for myBranchCalendarDAG to 2022-05-14T00:00:00+00:00
+[2022-05-14 23:50:02,599] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/my_BranchSQLDAG.py took 0.060 seconds
+[2022-05-14 23:50:33,001] {scheduler_job.py:182} INFO - Started process (PID=16086) to work on /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:50:33,002] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/my_BranchSQLDAG.py for tasks to queue
+[2022-05-14 23:50:33,002] {logging_mixin.py:104} INFO - [2022-05-14 23:50:33,002] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:50:33,011] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-05-14 23:50:33,017] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['myBranchCalendarDAG']) retrieved from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:50:33,027] {logging_mixin.py:104} INFO - [2022-05-14 23:50:33,027] {dag.py:1832} INFO - Sync 1 DAGs
+[2022-05-14 23:50:33,038] {logging_mixin.py:104} INFO - [2022-05-14 23:50:33,038] {dag.py:2305} INFO - Setting next_dagrun for myBranchCalendarDAG to 2022-05-14T00:00:00+00:00
+[2022-05-14 23:50:33,044] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/my_BranchSQLDAG.py took 0.045 seconds
+[2022-05-14 23:51:03,552] {scheduler_job.py:182} INFO - Started process (PID=16146) to work on /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:51:03,554] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/my_BranchSQLDAG.py for tasks to queue
+[2022-05-14 23:51:03,554] {logging_mixin.py:104} INFO - [2022-05-14 23:51:03,554] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:51:03,566] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-05-14 23:51:03,572] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['myBranchCalendarDAG']) retrieved from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:51:03,711] {logging_mixin.py:104} INFO - [2022-05-14 23:51:03,711] {dag.py:1832} INFO - Sync 1 DAGs
+[2022-05-14 23:51:03,720] {logging_mixin.py:104} INFO - [2022-05-14 23:51:03,720] {dag.py:2305} INFO - Setting next_dagrun for myBranchCalendarDAG to 2022-05-14T00:00:00+00:00
+[2022-05-14 23:51:03,727] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/my_BranchSQLDAG.py took 0.179 seconds
+[2022-05-14 23:51:34,065] {scheduler_job.py:182} INFO - Started process (PID=16206) to work on /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:51:34,065] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/my_BranchSQLDAG.py for tasks to queue
+[2022-05-14 23:51:34,066] {logging_mixin.py:104} INFO - [2022-05-14 23:51:34,066] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:51:34,075] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-05-14 23:51:34,080] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['myBranchCalendarDAG']) retrieved from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:51:34,093] {logging_mixin.py:104} INFO - [2022-05-14 23:51:34,093] {dag.py:1832} INFO - Sync 1 DAGs
+[2022-05-14 23:51:34,103] {logging_mixin.py:104} INFO - [2022-05-14 23:51:34,103] {dag.py:2305} INFO - Setting next_dagrun for myBranchCalendarDAG to 2022-05-14T00:00:00+00:00
+[2022-05-14 23:51:34,114] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/my_BranchSQLDAG.py took 0.052 seconds
+[2022-05-14 23:52:04,497] {scheduler_job.py:182} INFO - Started process (PID=16266) to work on /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:52:04,498] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/my_BranchSQLDAG.py for tasks to queue
+[2022-05-14 23:52:04,498] {logging_mixin.py:104} INFO - [2022-05-14 23:52:04,498] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:52:04,507] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-05-14 23:52:04,513] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['myBranchCalendarDAG']) retrieved from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:52:04,522] {logging_mixin.py:104} INFO - [2022-05-14 23:52:04,522] {dag.py:1832} INFO - Sync 1 DAGs
+[2022-05-14 23:52:04,533] {logging_mixin.py:104} INFO - [2022-05-14 23:52:04,533] {dag.py:2305} INFO - Setting next_dagrun for myBranchCalendarDAG to 2022-05-14T00:00:00+00:00
+[2022-05-14 23:52:04,539] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/my_BranchSQLDAG.py took 0.043 seconds
+[2022-05-14 23:52:34,976] {scheduler_job.py:182} INFO - Started process (PID=16326) to work on /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:52:34,977] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/my_BranchSQLDAG.py for tasks to queue
+[2022-05-14 23:52:34,977] {logging_mixin.py:104} INFO - [2022-05-14 23:52:34,977] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:52:34,991] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-05-14 23:52:35,001] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['myBranchCalendarDAG']) retrieved from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:52:35,238] {logging_mixin.py:104} INFO - [2022-05-14 23:52:35,238] {dag.py:1832} INFO - Sync 1 DAGs
+[2022-05-14 23:52:35,257] {logging_mixin.py:104} INFO - [2022-05-14 23:52:35,257] {dag.py:2305} INFO - Setting next_dagrun for myBranchCalendarDAG to 2022-05-14T00:00:00+00:00
+[2022-05-14 23:52:35,270] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/my_BranchSQLDAG.py took 0.297 seconds
+[2022-05-14 23:53:05,457] {scheduler_job.py:182} INFO - Started process (PID=16386) to work on /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:53:05,458] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/my_BranchSQLDAG.py for tasks to queue
+[2022-05-14 23:53:05,458] {logging_mixin.py:104} INFO - [2022-05-14 23:53:05,458] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:53:05,468] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-05-14 23:53:05,474] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['myBranchCalendarDAG']) retrieved from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:53:05,664] {logging_mixin.py:104} INFO - [2022-05-14 23:53:05,664] {dag.py:1832} INFO - Sync 1 DAGs
+[2022-05-14 23:53:05,675] {logging_mixin.py:104} INFO - [2022-05-14 23:53:05,675] {dag.py:2305} INFO - Setting next_dagrun for myBranchCalendarDAG to 2022-05-14T00:00:00+00:00
+[2022-05-14 23:53:05,681] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/my_BranchSQLDAG.py took 0.227 seconds
+[2022-05-14 23:53:35,997] {scheduler_job.py:182} INFO - Started process (PID=16446) to work on /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:53:35,997] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/my_BranchSQLDAG.py for tasks to queue
+[2022-05-14 23:53:35,998] {logging_mixin.py:104} INFO - [2022-05-14 23:53:35,997] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:53:36,006] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-05-14 23:53:36,012] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['myBranchCalendarDAG']) retrieved from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:53:36,025] {logging_mixin.py:104} INFO - [2022-05-14 23:53:36,025] {dag.py:1832} INFO - Sync 1 DAGs
+[2022-05-14 23:53:36,035] {logging_mixin.py:104} INFO - [2022-05-14 23:53:36,035] {dag.py:2305} INFO - Setting next_dagrun for myBranchCalendarDAG to 2022-05-14T00:00:00+00:00
+[2022-05-14 23:53:36,048] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/my_BranchSQLDAG.py took 0.053 seconds
+[2022-05-14 23:54:06,448] {scheduler_job.py:182} INFO - Started process (PID=16506) to work on /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:54:06,449] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/my_BranchSQLDAG.py for tasks to queue
+[2022-05-14 23:54:06,449] {logging_mixin.py:104} INFO - [2022-05-14 23:54:06,449] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:54:06,465] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-05-14 23:54:06,471] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['myBranchCalendarDAG']) retrieved from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:54:06,487] {logging_mixin.py:104} INFO - [2022-05-14 23:54:06,487] {dag.py:1832} INFO - Sync 1 DAGs
+[2022-05-14 23:54:06,511] {logging_mixin.py:104} INFO - [2022-05-14 23:54:06,511] {dag.py:2305} INFO - Setting next_dagrun for myBranchCalendarDAG to 2022-05-14T00:00:00+00:00
+[2022-05-14 23:54:06,532] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/my_BranchSQLDAG.py took 0.088 seconds
+[2022-05-14 23:54:37,197] {scheduler_job.py:182} INFO - Started process (PID=16566) to work on /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:54:37,198] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/my_BranchSQLDAG.py for tasks to queue
+[2022-05-14 23:54:37,198] {logging_mixin.py:104} INFO - [2022-05-14 23:54:37,198] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:54:37,207] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-05-14 23:54:37,213] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['myBranchCalendarDAG']) retrieved from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:54:37,473] {logging_mixin.py:104} INFO - [2022-05-14 23:54:37,473] {dag.py:1832} INFO - Sync 1 DAGs
+[2022-05-14 23:54:37,490] {logging_mixin.py:104} INFO - [2022-05-14 23:54:37,489] {dag.py:2305} INFO - Setting next_dagrun for myBranchCalendarDAG to 2022-05-14T00:00:00+00:00
+[2022-05-14 23:54:37,503] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/my_BranchSQLDAG.py took 0.308 seconds
+[2022-05-14 23:55:07,731] {scheduler_job.py:182} INFO - Started process (PID=16626) to work on /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:55:07,732] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/my_BranchSQLDAG.py for tasks to queue
+[2022-05-14 23:55:07,733] {logging_mixin.py:104} INFO - [2022-05-14 23:55:07,733] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:55:07,745] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-05-14 23:55:07,751] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['myBranchCalendarDAG']) retrieved from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:55:07,765] {logging_mixin.py:104} INFO - [2022-05-14 23:55:07,765] {dag.py:1832} INFO - Sync 1 DAGs
+[2022-05-14 23:55:07,778] {logging_mixin.py:104} INFO - [2022-05-14 23:55:07,777] {dag.py:2305} INFO - Setting next_dagrun for myBranchCalendarDAG to 2022-05-14T00:00:00+00:00
+[2022-05-14 23:55:07,788] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/my_BranchSQLDAG.py took 0.060 seconds
+[2022-05-14 23:55:38,140] {scheduler_job.py:182} INFO - Started process (PID=16686) to work on /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:55:38,141] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/my_BranchSQLDAG.py for tasks to queue
+[2022-05-14 23:55:38,141] {logging_mixin.py:104} INFO - [2022-05-14 23:55:38,141] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:55:38,156] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-05-14 23:55:38,165] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['myBranchCalendarDAG']) retrieved from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:55:38,175] {logging_mixin.py:104} INFO - [2022-05-14 23:55:38,175] {dag.py:1832} INFO - Sync 1 DAGs
+[2022-05-14 23:55:38,186] {logging_mixin.py:104} INFO - [2022-05-14 23:55:38,186] {dag.py:2305} INFO - Setting next_dagrun for myBranchCalendarDAG to 2022-05-14T00:00:00+00:00
+[2022-05-14 23:55:38,192] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/my_BranchSQLDAG.py took 0.055 seconds
+[2022-05-14 23:56:08,663] {scheduler_job.py:182} INFO - Started process (PID=16746) to work on /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:56:08,664] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/my_BranchSQLDAG.py for tasks to queue
+[2022-05-14 23:56:08,665] {logging_mixin.py:104} INFO - [2022-05-14 23:56:08,665] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:56:08,679] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-05-14 23:56:08,688] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['myBranchCalendarDAG']) retrieved from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:56:08,896] {logging_mixin.py:104} INFO - [2022-05-14 23:56:08,896] {dag.py:1832} INFO - Sync 1 DAGs
+[2022-05-14 23:56:08,908] {logging_mixin.py:104} INFO - [2022-05-14 23:56:08,907] {dag.py:2305} INFO - Setting next_dagrun for myBranchCalendarDAG to 2022-05-14T00:00:00+00:00
+[2022-05-14 23:56:08,915] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/my_BranchSQLDAG.py took 0.255 seconds
+[2022-05-14 23:56:39,183] {scheduler_job.py:182} INFO - Started process (PID=16806) to work on /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:56:39,185] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/my_BranchSQLDAG.py for tasks to queue
+[2022-05-14 23:56:39,186] {logging_mixin.py:104} INFO - [2022-05-14 23:56:39,186] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:56:39,202] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-05-14 23:56:39,210] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['myBranchCalendarDAG']) retrieved from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:56:39,360] {logging_mixin.py:104} INFO - [2022-05-14 23:56:39,360] {dag.py:1832} INFO - Sync 1 DAGs
+[2022-05-14 23:56:39,369] {logging_mixin.py:104} INFO - [2022-05-14 23:56:39,369] {dag.py:2305} INFO - Setting next_dagrun for myBranchCalendarDAG to 2022-05-14T00:00:00+00:00
+[2022-05-14 23:56:39,377] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/my_BranchSQLDAG.py took 0.201 seconds
+[2022-05-14 23:57:09,687] {scheduler_job.py:182} INFO - Started process (PID=16866) to work on /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:57:09,688] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/my_BranchSQLDAG.py for tasks to queue
+[2022-05-14 23:57:09,689] {logging_mixin.py:104} INFO - [2022-05-14 23:57:09,689] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:57:09,703] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-05-14 23:57:09,712] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['myBranchCalendarDAG']) retrieved from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:57:09,884] {logging_mixin.py:104} INFO - [2022-05-14 23:57:09,884] {dag.py:1832} INFO - Sync 1 DAGs
+[2022-05-14 23:57:09,898] {logging_mixin.py:104} INFO - [2022-05-14 23:57:09,897] {dag.py:2305} INFO - Setting next_dagrun for myBranchCalendarDAG to 2022-05-14T00:00:00+00:00
+[2022-05-14 23:57:09,906] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/my_BranchSQLDAG.py took 0.224 seconds
+[2022-05-14 23:57:40,530] {scheduler_job.py:182} INFO - Started process (PID=16926) to work on /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:57:40,532] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/my_BranchSQLDAG.py for tasks to queue
+[2022-05-14 23:57:40,533] {logging_mixin.py:104} INFO - [2022-05-14 23:57:40,532] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:57:40,551] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-05-14 23:57:40,561] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['myBranchCalendarDAG']) retrieved from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:57:40,575] {logging_mixin.py:104} INFO - [2022-05-14 23:57:40,575] {dag.py:1832} INFO - Sync 1 DAGs
+[2022-05-14 23:57:40,589] {logging_mixin.py:104} INFO - [2022-05-14 23:57:40,589] {dag.py:2305} INFO - Setting next_dagrun for myBranchCalendarDAG to 2022-05-14T00:00:00+00:00
+[2022-05-14 23:57:40,606] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/my_BranchSQLDAG.py took 0.082 seconds
+[2022-05-14 23:58:10,940] {scheduler_job.py:182} INFO - Started process (PID=16986) to work on /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:58:10,941] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/my_BranchSQLDAG.py for tasks to queue
+[2022-05-14 23:58:10,941] {logging_mixin.py:104} INFO - [2022-05-14 23:58:10,941] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:58:10,954] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-05-14 23:58:10,972] {scheduler_job.py:643} INFO - DAG(s) dict_keys(['myBranchCalendarDAG']) retrieved from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:58:10,983] {logging_mixin.py:104} INFO - [2022-05-14 23:58:10,983] {dag.py:1832} INFO - Sync 1 DAGs
+[2022-05-14 23:58:10,994] {logging_mixin.py:104} INFO - [2022-05-14 23:58:10,994] {dag.py:2305} INFO - Setting next_dagrun for myBranchCalendarDAG to 2022-05-14T00:00:00+00:00
+[2022-05-14 23:58:11,001] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/my_BranchSQLDAG.py took 0.065 seconds
+[2022-05-14 23:58:41,496] {scheduler_job.py:182} INFO - Started process (PID=17046) to work on /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:58:41,497] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/my_BranchSQLDAG.py for tasks to queue
+[2022-05-14 23:58:41,497] {logging_mixin.py:104} INFO - [2022-05-14 23:58:41,497] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:58:41,514] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-05-14 23:58:41,529] {logging_mixin.py:104} INFO - [2022-05-14 23:58:41,527] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/my_BranchSQLDAG.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/my_BranchSQLDAG.py", line 24, in <module>
+    sql="SELECT COUNT(1)"
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 179, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/sql.py", line 42, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 179, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 511, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to BaseSQLOperator (task_id: choose_task). Invalid arguments were:
+**kwargs: {'sql': 'SELECT COUNT(1)'}
+[2022-05-14 23:58:41,529] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:58:41,542] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/my_BranchSQLDAG.py took 0.050 seconds
+[2022-05-14 23:59:11,985] {scheduler_job.py:182} INFO - Started process (PID=17106) to work on /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:59:11,986] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/my_BranchSQLDAG.py for tasks to queue
+[2022-05-14 23:59:11,987] {logging_mixin.py:104} INFO - [2022-05-14 23:59:11,987] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:59:12,000] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-05-14 23:59:12,012] {logging_mixin.py:104} INFO - [2022-05-14 23:59:12,011] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/my_BranchSQLDAG.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/my_BranchSQLDAG.py", line 24, in <module>
+    sql="SELECT COUNT(1) FROM"
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 179, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/sql.py", line 42, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 179, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 511, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to BaseSQLOperator (task_id: choose_task). Invalid arguments were:
+**kwargs: {'sql': 'SELECT COUNT(1) FROM'}
+[2022-05-14 23:59:12,013] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:59:12,027] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/my_BranchSQLDAG.py took 0.047 seconds
+[2022-05-14 23:59:42,593] {scheduler_job.py:182} INFO - Started process (PID=17166) to work on /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:59:42,594] {scheduler_job.py:633} INFO - Processing file /opt/airflow/dags/my_BranchSQLDAG.py for tasks to queue
+[2022-05-14 23:59:42,596] {logging_mixin.py:104} INFO - [2022-05-14 23:59:42,595] {dagbag.py:487} INFO - Filling up the DagBag from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:59:42,615] {logging_mixin.py:104} WARNING - /home/airflow/.local/lib/python3.6/site-packages/airflow/providers/postgres/operators/postgres.py:25 DeprecationWarning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the`default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2022-05-14 23:59:42,627] {logging_mixin.py:104} INFO - [2022-05-14 23:59:42,626] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/my_BranchSQLDAG.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 317, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/my_BranchSQLDAG.py", line 25, in <module>
+    follow_task_ids_if_true=[]
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 179, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/sql.py", line 42, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 179, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 511, in __init__
+    "arguments were:\n**kwargs: {k}".format(c=self.__class__.__name__, k=kwargs, t=task_id),
+airflow.exceptions.AirflowException: Invalid arguments were passed to BaseSQLOperator (task_id: choose_task). Invalid arguments were:
+**kwargs: {'sql': 'SELECT COUNT(1) FROM PARTNERS WHERE partner_status=TRUE', 'follow_task_ids_if_true': []}
+[2022-05-14 23:59:42,627] {scheduler_job.py:645} WARNING - No viable dags retrieved from /opt/airflow/dags/my_BranchSQLDAG.py
+[2022-05-14 23:59:42,642] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/my_BranchSQLDAG.py took 0.054 seconds

@@ -1,0 +1,23 @@
+[2022-05-12 20:48:07,739] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: my_dag.my_task 2022-05-12T20:48:07.189064+00:00 [queued]>
+[2022-05-12 20:48:07,749] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: my_dag.my_task 2022-05-12T20:48:07.189064+00:00 [queued]>
+[2022-05-12 20:48:07,750] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-12 20:48:07,750] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-05-12 20:48:07,750] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-12 20:48:07,769] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): my_task> on 2022-05-12T20:48:07.189064+00:00
+[2022-05-12 20:48:07,777] {standard_task_runner.py:52} INFO - Started process 864 to run task
+[2022-05-12 20:48:07,780] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'my_dag', 'my_task', '2022-05-12T20:48:07.189064+00:00', '--job-id', '12', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/my_dag.py', '--cfg-path', '/tmp/tmp12n8m4nj', '--error-file', '/tmp/tmpwckdzgfw']
+[2022-05-12 20:48:07,782] {standard_task_runner.py:77} INFO - Job 12: Subtask my_task
+[2022-05-12 20:48:07,817] {logging_mixin.py:104} INFO - Running <TaskInstance: my_dag.my_task 2022-05-12T20:48:07.189064+00:00 [running]> on host 7b5fcf14949b
+[2022-05-12 20:48:07,860] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=my_dag
+AIRFLOW_CTX_TASK_ID=my_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-12T20:48:07.189064+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-05-12T20:48:07.189064+00:00
+[2022-05-12 20:48:07,861] {logging_mixin.py:104} INFO - {'conf': <airflow.configuration.AirflowConfigParser object at 0x7fce4fa3cf60>, 'dag': <DAG: my_dag>, 'dag_run': <DagRun my_dag @ 2022-05-12 20:48:07.189064+00:00: manual__2022-05-12T20:48:07.189064+00:00, externally triggered: True>, 'ds': '2022-05-12', 'ds_nodash': '20220512', 'execution_date': DateTime(2022, 5, 12, 20, 48, 7, 189064, tzinfo=Timezone('+00:00')), 'inlets': [], 'macros': <module 'airflow.macros' from '/home/airflow/.local/lib/python3.6/site-packages/airflow/macros/__init__.py'>, 'next_ds': '2022-05-12', 'next_ds_nodash': '20220512', 'next_execution_date': DateTime(2022, 5, 12, 20, 48, 7, 189064, tzinfo=Timezone('+00:00')), 'outlets': [], 'params': {}, 'prev_ds': '2022-05-12', 'prev_ds_nodash': '20220512', 'prev_execution_date': DateTime(2022, 5, 12, 20, 48, 7, 189064, tzinfo=Timezone('+00:00')), 'prev_execution_date_success': <Proxy at 0x7fce451ccd48 with factory <function TaskInstance.get_template_context.<locals>.<lambda> at 0x7fce4515bea0>>, 'prev_start_date_success': <Proxy at 0x7fcde5def108 with factory <function TaskInstance.get_template_context.<locals>.<lambda> at 0x7fce45158e18>>, 'run_id': 'manual__2022-05-12T20:48:07.189064+00:00', 'task': <Task(PythonOperator): my_task>, 'task_instance': <TaskInstance: my_dag.my_task 2022-05-12T20:48:07.189064+00:00 [running]>, 'task_instance_key_str': 'my_dag__my_task__20220512', 'test_mode': False, 'ti': <TaskInstance: my_dag.my_task 2022-05-12T20:48:07.189064+00:00 [running]>, 'tomorrow_ds': '2022-05-13', 'tomorrow_ds_nodash': '20220513', 'ts': '2022-05-12T20:48:07.189064+00:00', 'ts_nodash': '20220512T204807', 'ts_nodash_with_tz': '20220512T204807.189064+0000', 'var': {'json': None, 'value': None}, 'yesterday_ds': '2022-05-11', 'yesterday_ds_nodash': '20220511', 'templates_dict': None}
+[2022-05-12 20:48:07,861] {python.py:151} INFO - Done. Returned value was: None
+[2022-05-12 20:48:07,870] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=my_dag, task_id=my_task, execution_date=20220512T204807, start_date=20220512T204807, end_date=20220512T204807
+[2022-05-12 20:48:07,885] {taskinstance.py:1245} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-05-12 20:48:07,912] {local_task_job.py:151} INFO - Task exited with return code 0

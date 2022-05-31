@@ -1,0 +1,3 @@
+Try {{try_number}} out of  {{max_tries + 1}}
+You have a failed task in your pipeline.
+Execution date: {{ti.execution_date}}

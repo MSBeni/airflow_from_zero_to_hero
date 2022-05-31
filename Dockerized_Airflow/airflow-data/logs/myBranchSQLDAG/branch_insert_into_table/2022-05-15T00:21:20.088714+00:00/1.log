@@ -1,0 +1,47 @@
+[2022-05-15 00:21:21,606] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: myBranchSQLDAG.branch_insert_into_table 2022-05-15T00:21:20.088714+00:00 [queued]>
+[2022-05-15 00:21:21,613] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: myBranchSQLDAG.branch_insert_into_table 2022-05-15T00:21:20.088714+00:00 [queued]>
+[2022-05-15 00:21:21,613] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 00:21:21,613] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-05-15 00:21:21,614] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 00:21:21,622] {taskinstance.py:1087} INFO - Executing <Task(PostgresOperator): branch_insert_into_table> on 2022-05-15T00:21:20.088714+00:00
+[2022-05-15 00:21:21,625] {standard_task_runner.py:52} INFO - Started process 19756 to run task
+[2022-05-15 00:21:21,627] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'myBranchSQLDAG', 'branch_insert_into_table', '2022-05-15T00:21:20.088714+00:00', '--job-id', '21', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/my_BranchSQLDAG.py', '--cfg-path', '/tmp/tmpvbyy4t7i', '--error-file', '/tmp/tmpwl5qwjch']
+[2022-05-15 00:21:21,629] {standard_task_runner.py:77} INFO - Job 21: Subtask branch_insert_into_table
+[2022-05-15 00:21:21,653] {logging_mixin.py:104} INFO - Running <TaskInstance: myBranchSQLDAG.branch_insert_into_table 2022-05-15T00:21:20.088714+00:00 [running]> on host d011519e5366
+[2022-05-15 00:21:21,683] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=myBranchSQLDAG
+AIRFLOW_CTX_TASK_ID=branch_insert_into_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-15T00:21:20.088714+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-05-15T00:21:20.088714+00:00
+[2022-05-15 00:21:21,683] {postgres.py:70} INFO - Executing: INSERT INTO partners(partner_name, partner_status)
+    VALUES ('A', TRUE)
+ON CONFLICT(partner_name)
+    DO NOTHING;
+INSERT INTO partners(partner_name, partner_status)
+    VALUES ('B', FALSE)
+ON CONFLICT(partner_name)
+    DO NOTHING;
+INSERT INTO partners(partner_name, partner_status)
+    VALUES ('C', TRUE)
+ON CONFLICT(partner_name)
+    DO NOTHING;
+[2022-05-15 00:21:21,688] {base.py:78} INFO - Using connection to: id: ***. Host: ***, Port: 5432, Schema: , Login: ***, Password: ***, extra: {}
+[2022-05-15 00:21:21,691] {dbapi.py:204} INFO - Running statement: INSERT INTO partners(partner_name, partner_status)
+    VALUES ('A', TRUE)
+ON CONFLICT(partner_name)
+    DO NOTHING;
+INSERT INTO partners(partner_name, partner_status)
+    VALUES ('B', FALSE)
+ON CONFLICT(partner_name)
+    DO NOTHING;
+INSERT INTO partners(partner_name, partner_status)
+    VALUES ('C', TRUE)
+ON CONFLICT(partner_name)
+    DO NOTHING;, parameters: None
+[2022-05-15 00:21:21,692] {dbapi.py:212} INFO - Rows affected: 1
+[2022-05-15 00:21:21,701] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=myBranchSQLDAG, task_id=branch_insert_into_table, execution_date=20220515T002120, start_date=20220515T002121, end_date=20220515T002121
+[2022-05-15 00:21:21,718] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-05-15 00:21:21,759] {local_task_job.py:151} INFO - Task exited with return code 0

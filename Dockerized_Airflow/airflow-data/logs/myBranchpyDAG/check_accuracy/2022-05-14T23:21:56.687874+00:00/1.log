@@ -1,0 +1,24 @@
+[2022-05-14 23:21:58,559] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: myBranchpyDAG.check_accuracy 2022-05-14T23:21:56.687874+00:00 [queued]>
+[2022-05-14 23:21:58,568] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: myBranchpyDAG.check_accuracy 2022-05-14T23:21:56.687874+00:00 [queued]>
+[2022-05-14 23:21:58,568] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-14 23:21:58,568] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-05-14 23:21:58,569] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-14 23:21:58,578] {taskinstance.py:1087} INFO - Executing <Task(BranchPythonOperator): check_accuracy> on 2022-05-14T23:21:56.687874+00:00
+[2022-05-14 23:21:58,582] {standard_task_runner.py:52} INFO - Started process 13114 to run task
+[2022-05-14 23:21:58,586] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'myBranchpyDAG', 'check_accuracy', '2022-05-14T23:21:56.687874+00:00', '--job-id', '11', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/my_BranchpyDAG.py', '--cfg-path', '/tmp/tmpnpmalz0t', '--error-file', '/tmp/tmpxlvhioeb']
+[2022-05-14 23:21:58,589] {standard_task_runner.py:77} INFO - Job 11: Subtask check_accuracy
+[2022-05-14 23:21:58,617] {logging_mixin.py:104} INFO - Running <TaskInstance: myBranchpyDAG.check_accuracy 2022-05-14T23:21:56.687874+00:00 [running]> on host d011519e5366
+[2022-05-14 23:21:58,656] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=myBranchpyDAG
+AIRFLOW_CTX_TASK_ID=check_accuracy
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-14T23:21:56.687874+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-05-14T23:21:56.687874+00:00
+[2022-05-14 23:21:58,656] {python.py:151} INFO - Done. Returned value was: ['accurate', 'top_accurate']
+[2022-05-14 23:21:58,656] {skipmixin.py:124} INFO - Following branch ['accurate', 'top_accurate']
+[2022-05-14 23:21:58,662] {skipmixin.py:155} INFO - Skipping tasks ['inaccurate']
+[2022-05-14 23:21:58,754] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=myBranchpyDAG, task_id=check_accuracy, execution_date=20220514T232156, start_date=20220514T232158, end_date=20220514T232158
+[2022-05-14 23:21:58,797] {taskinstance.py:1245} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2022-05-14 23:21:58,837] {local_task_job.py:151} INFO - Task exited with return code 0

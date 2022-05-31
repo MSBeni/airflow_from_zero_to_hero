@@ -1,0 +1,23 @@
+[2022-05-16 04:17:29,016] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: xcom_checker.xcom_task_1 2022-05-16T04:17:28.400043+00:00 [queued]>
+[2022-05-16 04:17:29,075] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: xcom_checker.xcom_task_1 2022-05-16T04:17:28.400043+00:00 [queued]>
+[2022-05-16 04:17:29,075] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-16 04:17:29,075] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-05-16 04:17:29,076] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-16 04:17:29,087] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): xcom_task_1> on 2022-05-16T04:17:28.400043+00:00
+[2022-05-16 04:17:29,096] {standard_task_runner.py:52} INFO - Started process 113037 to run task
+[2022-05-16 04:17:29,100] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'xcom_checker', 'xcom_task_1', '2022-05-16T04:17:28.400043+00:00', '--job-id', '53', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/my_xcom_tester.py', '--cfg-path', '/tmp/tmpc4chansq', '--error-file', '/tmp/tmp884xhqx6']
+[2022-05-16 04:17:29,104] {standard_task_runner.py:77} INFO - Job 53: Subtask xcom_task_1
+[2022-05-16 04:17:29,160] {logging_mixin.py:104} INFO - Running <TaskInstance: xcom_checker.xcom_task_1 2022-05-16T04:17:28.400043+00:00 [running]> on host 7190ca705fc5
+[2022-05-16 04:17:29,259] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=xcom_checker
+AIRFLOW_CTX_TASK_ID=xcom_task_1
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-16T04:17:28.400043+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-05-16T04:17:28.400043+00:00
+[2022-05-16 04:17:29,261] {logging_mixin.py:104} INFO - {'conf': <airflow.configuration.AirflowConfigParser object at 0x7fd597669470>, 'dag': <DAG: xcom_checker>, 'dag_run': <DagRun xcom_checker @ 2022-05-16 04:17:28.400043+00:00: manual__2022-05-16T04:17:28.400043+00:00, externally triggered: True>, 'ds': '2022-05-16', 'ds_nodash': '20220516', 'execution_date': DateTime(2022, 5, 16, 4, 17, 28, 400043, tzinfo=Timezone('+00:00')), 'inlets': [], 'macros': <module 'airflow.macros' from '/home/airflow/.local/lib/python3.6/site-packages/airflow/macros/__init__.py'>, 'next_ds': '2022-05-16', 'next_ds_nodash': '20220516', 'next_execution_date': DateTime(2022, 5, 16, 4, 17, 28, 400043, tzinfo=Timezone('+00:00')), 'outlets': [], 'params': {}, 'prev_ds': '2022-05-16', 'prev_ds_nodash': '20220516', 'prev_execution_date': DateTime(2022, 5, 16, 4, 17, 28, 400043, tzinfo=Timezone('+00:00')), 'prev_execution_date_success': <Proxy at 0x7fd58cbb3348 with factory <function TaskInstance.get_template_context.<locals>.<lambda> at 0x7fd58cb8dbf8>>, 'prev_start_date_success': <Proxy at 0x7fd58cb490c8 with factory <function TaskInstance.get_template_context.<locals>.<lambda> at 0x7fd58cb7a6a8>>, 'run_id': 'manual__2022-05-16T04:17:28.400043+00:00', 'task': <Task(PythonOperator): xcom_task_1>, 'task_instance': <TaskInstance: xcom_checker.xcom_task_1 2022-05-16T04:17:28.400043+00:00 [running]>, 'task_instance_key_str': 'xcom_checker__xcom_task_1__20220516', 'test_mode': False, 'ti': <TaskInstance: xcom_checker.xcom_task_1 2022-05-16T04:17:28.400043+00:00 [running]>, 'tomorrow_ds': '2022-05-17', 'tomorrow_ds_nodash': '20220517', 'ts': '2022-05-16T04:17:28.400043+00:00', 'ts_nodash': '20220516T041728', 'ts_nodash_with_tz': '20220516T041728.400043+0000', 'var': {'json': None, 'value': None}, 'yesterday_ds': '2022-05-15', 'yesterday_ds_nodash': '20220515', 'templates_dict': None}
+[2022-05-16 04:17:29,261] {python.py:151} INFO - Done. Returned value was: None
+[2022-05-16 04:17:29,267] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=xcom_checker, task_id=xcom_task_1, execution_date=20220516T041728, start_date=20220516T041729, end_date=20220516T041729
+[2022-05-16 04:17:29,285] {taskinstance.py:1245} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-05-16 04:17:29,317] {local_task_job.py:151} INFO - Task exited with return code 0

@@ -1,0 +1,24 @@
+[2022-05-15 22:04:20,678] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: GCPetlDAG.check_data_loaded_in_gbq 2022-05-15T22:03:58.145443+00:00 [queued]>
+[2022-05-15 22:04:20,689] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: GCPetlDAG.check_data_loaded_in_gbq 2022-05-15T22:03:58.145443+00:00 [queued]>
+[2022-05-15 22:04:20,689] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 22:04:20,689] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-05-15 22:04:20,689] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 22:04:20,694] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): check_data_loaded_in_gbq> on 2022-05-15T22:03:58.145443+00:00
+[2022-05-15 22:04:20,699] {standard_task_runner.py:52} INFO - Started process 53799 to run task
+[2022-05-15 22:04:20,701] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'GCPetlDAG', 'check_data_loaded_in_gbq', '2022-05-15T22:03:58.145443+00:00', '--job-id', '52', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/my_gcpPipeLine.py', '--cfg-path', '/tmp/tmp14hldjqm', '--error-file', '/tmp/tmpama86gk5']
+[2022-05-15 22:04:20,703] {standard_task_runner.py:77} INFO - Job 52: Subtask check_data_loaded_in_gbq
+[2022-05-15 22:04:20,727] {logging_mixin.py:104} INFO - Running <TaskInstance: GCPetlDAG.check_data_loaded_in_gbq 2022-05-15T22:03:58.145443+00:00 [running]> on host 7190ca705fc5
+[2022-05-15 22:04:20,773] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=msbeni
+AIRFLOW_CTX_DAG_ID=GCPetlDAG
+AIRFLOW_CTX_TASK_ID=check_data_loaded_in_gbq
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-15T22:03:58.145443+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-05-15T22:03:58.145443+00:00
+[2022-05-15 22:04:22,108] {logging_mixin.py:104} INFO -    f0_
+0    1
+[2022-05-15 22:04:22,108] {python.py:151} INFO - Done. Returned value was: None
+[2022-05-15 22:04:22,125] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=GCPetlDAG, task_id=check_data_loaded_in_gbq, execution_date=20220515T220358, start_date=20220515T220420, end_date=20220515T220422
+[2022-05-15 22:04:22,149] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-05-15 22:04:22,164] {local_task_job.py:151} INFO - Task exited with return code 0

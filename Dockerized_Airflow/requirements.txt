@@ -1,0 +1,5 @@
+airflow-provider-great-expectations==0.1.4
+requests==2.27.1
+pandas==1.4.2
+google-cloud==0.34.0
+google-auth==2.6.6

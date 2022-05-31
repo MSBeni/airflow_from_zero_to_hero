@@ -1,0 +1,45 @@
+[2022-05-15 21:57:15,085] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: GCPetlDAG.push_data_to_gcp 2022-05-15T21:56:54.437298+00:00 [queued]>
+[2022-05-15 21:57:15,095] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: GCPetlDAG.push_data_to_gcp 2022-05-15T21:56:54.437298+00:00 [queued]>
+[2022-05-15 21:57:15,095] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 21:57:15,095] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-05-15 21:57:15,095] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 21:57:15,100] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): push_data_to_gcp> on 2022-05-15T21:56:54.437298+00:00
+[2022-05-15 21:57:15,105] {standard_task_runner.py:52} INFO - Started process 52593 to run task
+[2022-05-15 21:57:15,107] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'GCPetlDAG', 'push_data_to_gcp', '2022-05-15T21:56:54.437298+00:00', '--job-id', '32', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/my_gcpPipeLine.py', '--cfg-path', '/tmp/tmpjh7tatzt', '--error-file', '/tmp/tmpjqatni3p']
+[2022-05-15 21:57:15,109] {standard_task_runner.py:77} INFO - Job 32: Subtask push_data_to_gcp
+[2022-05-15 21:57:15,133] {logging_mixin.py:104} INFO - Running <TaskInstance: GCPetlDAG.push_data_to_gcp 2022-05-15T21:56:54.437298+00:00 [running]> on host 7190ca705fc5
+[2022-05-15 21:57:15,179] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=msbeni
+AIRFLOW_CTX_DAG_ID=GCPetlDAG
+AIRFLOW_CTX_TASK_ID=push_data_to_gcp
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-15T21:56:54.437298+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-05-15T21:56:54.437298+00:00
+[2022-05-15 21:57:15,553] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/my_gcpPipeLine.py", line 101, in _push_to_gcp
+    errors = client.insert_rows_json(kwargs['table_id'], rows_to_insert)  # Make an API request.
+  File "/home/airflow/.local/lib/python3.6/site-packages/google/cloud/bigquery/client.py", line 3371, in insert_rows_json
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.6/site-packages/google/cloud/bigquery/client.py", line 685, in _call_api
+    return call()
+  File "/home/airflow/.local/lib/python3.6/site-packages/google/api_core/retry.py", line 286, in retry_wrapped_func
+    on_error=on_error,
+  File "/home/airflow/.local/lib/python3.6/site-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/home/airflow/.local/lib/python3.6/site-packages/google/cloud/_http.py", line 483, in api_request
+    raise exceptions.from_http_response(response)
+google.api_core.exceptions.NotFound: 404 POST https://bigquery.googleapis.com/bigquery/v2/projects/my-second-project-341619/datasets/bitcoin_price_ds/tables/bitcoin_price/insertAll?prettyPrint=false: Table 484121035005:bitcoin_price_ds.bitcoin_price not found.
+[2022-05-15 21:57:15,555] {taskinstance.py:1531} INFO - Marking task as FAILED. dag_id=GCPetlDAG, task_id=push_data_to_gcp, execution_date=20220515T215654, start_date=20220515T215715, end_date=20220515T215715
+[2022-05-15 21:57:15,601] {local_task_job.py:151} INFO - Task exited with return code 1

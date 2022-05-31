@@ -1,0 +1,37 @@
+[2022-05-15 00:16:35,112] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: myBranchSQLDAG.branch_insert_into_table 2022-05-15T00:16:33.021124+00:00 [queued]>
+[2022-05-15 00:16:35,121] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: myBranchSQLDAG.branch_insert_into_table 2022-05-15T00:16:33.021124+00:00 [queued]>
+[2022-05-15 00:16:35,121] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 00:16:35,121] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-05-15 00:16:35,122] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 00:16:35,132] {taskinstance.py:1087} INFO - Executing <Task(PostgresOperator): branch_insert_into_table> on 2022-05-15T00:16:33.021124+00:00
+[2022-05-15 00:16:35,138] {standard_task_runner.py:52} INFO - Started process 19169 to run task
+[2022-05-15 00:16:35,141] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'myBranchSQLDAG', 'branch_insert_into_table', '2022-05-15T00:16:33.021124+00:00', '--job-id', '15', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/my_BranchSQLDAG.py', '--cfg-path', '/tmp/tmp69oy5_jq', '--error-file', '/tmp/tmplukqmhuc']
+[2022-05-15 00:16:35,143] {standard_task_runner.py:77} INFO - Job 15: Subtask branch_insert_into_table
+[2022-05-15 00:16:35,173] {logging_mixin.py:104} INFO - Running <TaskInstance: myBranchSQLDAG.branch_insert_into_table 2022-05-15T00:16:33.021124+00:00 [running]> on host d011519e5366
+[2022-05-15 00:16:35,193] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1274, in _prepare_and_execute_task_with_callbacks
+    self.render_templates(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1775, in render_templates
+    self.task.render_template_fields(context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 989, in render_template_fields
+    self._do_render_template_fields(self, self.template_fields, context, jinja_env, set())
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 1002, in _do_render_template_fields
+    rendered_content = self.render_template(content, context, jinja_env, seen_oids)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/baseoperator.py", line 1037, in render_template
+    return jinja_env.get_template(content).render(**context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/airflow/.local/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/airflow/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 115, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/airflow/.local/lib/python3.6/site-packages/jinja2/loaders.py", line 197, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: sql/INSERT_INTO_PARTNERS.sql
+[2022-05-15 00:16:35,194] {taskinstance.py:1531} INFO - Marking task as FAILED. dag_id=myBranchSQLDAG, task_id=branch_insert_into_table, execution_date=20220515T001633, start_date=20220515T001635, end_date=20220515T001635
+[2022-05-15 00:16:35,234] {local_task_job.py:151} INFO - Task exited with return code 1

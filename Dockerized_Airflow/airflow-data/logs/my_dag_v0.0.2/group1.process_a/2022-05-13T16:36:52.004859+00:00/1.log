@@ -1,0 +1,28 @@
+[2022-05-13 16:37:04,150] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: my_dag_v0.0.2.group1.process_a 2022-05-13T16:36:52.004859+00:00 [queued]>
+[2022-05-13 16:37:04,160] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: my_dag_v0.0.2.group1.process_a 2022-05-13T16:36:52.004859+00:00 [queued]>
+[2022-05-13 16:37:04,160] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-13 16:37:04,160] {taskinstance.py:1068} INFO - Starting attempt 1 of 4
+[2022-05-13 16:37:04,161] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-13 16:37:04,166] {taskinstance.py:1087} INFO - Executing <Task(BashOperator): group1.process_a> on 2022-05-13T16:36:52.004859+00:00
+[2022-05-13 16:37:04,170] {standard_task_runner.py:52} INFO - Started process 2142 to run task
+[2022-05-13 16:37:04,172] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'my_dag_v0.0.2', 'group1.process_a', '2022-05-13T16:36:52.004859+00:00', '--job-id', '45', '--pool', 'concurrency_limitation_pool', '--raw', '--subdir', 'DAGS_FOLDER/my_dag_v_0_1_0_1.py', '--cfg-path', '/tmp/tmprt5h8k8h', '--error-file', '/tmp/tmp2gq5p_5w']
+[2022-05-13 16:37:04,173] {standard_task_runner.py:77} INFO - Job 45: Subtask group1.process_a
+[2022-05-13 16:37:04,197] {logging_mixin.py:104} INFO - Running <TaskInstance: my_dag_v0.0.2.group1.process_a 2022-05-13T16:36:52.004859+00:00 [running]> on host bacb497a28fb
+[2022-05-13 16:37:04,257] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=msbeni@gmail.com
+AIRFLOW_CTX_DAG_OWNER=mohasa
+AIRFLOW_CTX_DAG_ID=my_dag_v0.0.2
+AIRFLOW_CTX_TASK_ID=group1.process_a
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-13T16:36:52.004859+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-05-13T16:36:52.004859+00:00
+[2022-05-13 16:37:04,258] {subprocess.py:52} INFO - Tmp dir root location: 
+ /tmp
+[2022-05-13 16:37:04,259] {subprocess.py:63} INFO - Running command: ['bash', '-c', "echo '1' && sleep 20"]
+[2022-05-13 16:37:04,268] {subprocess.py:75} INFO - Output:
+[2022-05-13 16:37:04,271] {subprocess.py:79} INFO - 1
+[2022-05-13 16:37:24,274] {subprocess.py:83} INFO - Command exited with return code 0
+[2022-05-13 16:37:24,332] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=my_dag_v0.0.2, task_id=group1.process_a, execution_date=20220513T163652, start_date=20220513T163704, end_date=20220513T163724
+[2022-05-13 16:37:24,381] {taskinstance.py:1245} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-05-13 16:37:24,400] {local_task_job.py:151} INFO - Task exited with return code 0

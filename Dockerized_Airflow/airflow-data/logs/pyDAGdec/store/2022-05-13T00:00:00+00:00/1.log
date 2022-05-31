@@ -1,0 +1,27 @@
+[2022-05-14 02:49:55,353] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: pyDAGdec.store 2022-05-13T00:00:00+00:00 [queued]>
+[2022-05-14 02:49:55,364] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: pyDAGdec.store 2022-05-13T00:00:00+00:00 [queued]>
+[2022-05-14 02:49:55,364] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-14 02:49:55,364] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-05-14 02:49:55,365] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-14 02:49:55,370] {taskinstance.py:1087} INFO - Executing <Task(BashOperator): store> on 2022-05-13T00:00:00+00:00
+[2022-05-14 02:49:55,374] {standard_task_runner.py:52} INFO - Started process 6417 to run task
+[2022-05-14 02:49:55,376] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'pyDAGdec', 'store', '2022-05-13T00:00:00+00:00', '--job-id', '5', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/my_pydag_decorator.py', '--cfg-path', '/tmp/tmp1pfwwitl', '--error-file', '/tmp/tmpmkzagdke']
+[2022-05-14 02:49:55,377] {standard_task_runner.py:77} INFO - Job 5: Subtask store
+[2022-05-14 02:49:55,403] {logging_mixin.py:104} INFO - Running <TaskInstance: pyDAGdec.store 2022-05-13T00:00:00+00:00 [running]> on host d011519e5366
+[2022-05-14 02:49:55,440] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=pyDAGdec
+AIRFLOW_CTX_TASK_ID=store
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-13T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-13T00:00:00+00:00
+[2022-05-14 02:49:55,441] {subprocess.py:52} INFO - Tmp dir root location: 
+ /tmp
+[2022-05-14 02:49:55,441] {subprocess.py:63} INFO - Running command: ['bash', '-c', "echo 'store is called'"]
+[2022-05-14 02:49:55,449] {subprocess.py:75} INFO - Output:
+[2022-05-14 02:49:55,451] {subprocess.py:79} INFO - store is called
+[2022-05-14 02:49:55,451] {subprocess.py:83} INFO - Command exited with return code 0
+[2022-05-14 02:49:55,475] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=pyDAGdec, task_id=store, execution_date=20220513T000000, start_date=20220514T024955, end_date=20220514T024955
+[2022-05-14 02:49:55,493] {taskinstance.py:1245} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-05-14 02:49:55,507] {local_task_job.py:151} INFO - Task exited with return code 0

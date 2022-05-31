@@ -1,0 +1,22 @@
+[2022-05-16 04:27:10,456] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: xcom_checker.xcom_task_1 2022-05-16T04:27:09.589248+00:00 [queued]>
+[2022-05-16 04:27:10,473] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: xcom_checker.xcom_task_1 2022-05-16T04:27:09.589248+00:00 [queued]>
+[2022-05-16 04:27:10,473] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-16 04:27:10,473] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-05-16 04:27:10,474] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-16 04:27:10,479] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): xcom_task_1> on 2022-05-16T04:27:09.589248+00:00
+[2022-05-16 04:27:10,484] {standard_task_runner.py:52} INFO - Started process 114661 to run task
+[2022-05-16 04:27:10,486] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'xcom_checker', 'xcom_task_1', '2022-05-16T04:27:09.589248+00:00', '--job-id', '55', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/my_xcom_tester.py', '--cfg-path', '/tmp/tmpab61dn0d', '--error-file', '/tmp/tmp0_1vza79']
+[2022-05-16 04:27:10,488] {standard_task_runner.py:77} INFO - Job 55: Subtask xcom_task_1
+[2022-05-16 04:27:10,512] {logging_mixin.py:104} INFO - Running <TaskInstance: xcom_checker.xcom_task_1 2022-05-16T04:27:09.589248+00:00 [running]> on host 7190ca705fc5
+[2022-05-16 04:27:10,546] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=xcom_checker
+AIRFLOW_CTX_TASK_ID=xcom_task_1
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-16T04:27:09.589248+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-05-16T04:27:09.589248+00:00
+[2022-05-16 04:27:10,546] {python.py:151} INFO - Done. Returned value was: 2022-05-16T04:27:09.589248+00:00
+[2022-05-16 04:27:10,562] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=xcom_checker, task_id=xcom_task_1, execution_date=20220516T042709, start_date=20220516T042710, end_date=20220516T042710
+[2022-05-16 04:27:10,580] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-05-16 04:27:10,618] {local_task_job.py:151} INFO - Task exited with return code 0

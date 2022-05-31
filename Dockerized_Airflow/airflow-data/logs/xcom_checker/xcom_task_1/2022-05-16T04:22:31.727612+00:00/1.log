@@ -1,0 +1,50 @@
+[2022-05-16 04:22:32,435] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: xcom_checker.xcom_task_1 2022-05-16T04:22:31.727612+00:00 [queued]>
+[2022-05-16 04:22:32,449] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: xcom_checker.xcom_task_1 2022-05-16T04:22:31.727612+00:00 [queued]>
+[2022-05-16 04:22:32,449] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-16 04:22:32,449] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-05-16 04:22:32,450] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-16 04:22:32,456] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): xcom_task_1> on 2022-05-16T04:22:31.727612+00:00
+[2022-05-16 04:22:32,460] {standard_task_runner.py:52} INFO - Started process 113827 to run task
+[2022-05-16 04:22:32,463] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'xcom_checker', 'xcom_task_1', '2022-05-16T04:22:31.727612+00:00', '--job-id', '54', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/my_xcom_tester.py', '--cfg-path', '/tmp/tmp_u_qd2qd', '--error-file', '/tmp/tmpmb3bw205']
+[2022-05-16 04:22:32,464] {standard_task_runner.py:77} INFO - Job 54: Subtask xcom_task_1
+[2022-05-16 04:22:32,490] {logging_mixin.py:104} INFO - Running <TaskInstance: xcom_checker.xcom_task_1 2022-05-16T04:22:31.727612+00:00 [running]> on host 7190ca705fc5
+[2022-05-16 04:22:32,524] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=xcom_checker
+AIRFLOW_CTX_TASK_ID=xcom_task_1
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-16T04:22:31.727612+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-05-16T04:22:31.727612+00:00
+[2022-05-16 04:22:32,525] {logging_mixin.py:104} INFO - {'conf': <airflow.configuration.AirflowConfigParser object at 0x7fd597669470>, 'dag': <DAG: xcom_checker>, 'dag_run': <DagRun xcom_checker @ 2022-05-16 04:22:31.727612+00:00: manual__2022-05-16T04:22:31.727612+00:00, externally triggered: True>, 'ds': '2022-05-16', 'ds_nodash': '20220516', 'execution_date': DateTime(2022, 5, 16, 4, 22, 31, 727612, tzinfo=Timezone('+00:00')), 'inlets': [], 'macros': <module 'airflow.macros' from '/home/airflow/.local/lib/python3.6/site-packages/airflow/macros/__init__.py'>, 'next_ds': '2022-05-16', 'next_ds_nodash': '20220516', 'next_execution_date': DateTime(2022, 5, 16, 4, 22, 31, 727612, tzinfo=Timezone('+00:00')), 'outlets': [], 'params': {}, 'prev_ds': '2022-05-16', 'prev_ds_nodash': '20220516', 'prev_execution_date': DateTime(2022, 5, 16, 4, 22, 31, 727612, tzinfo=Timezone('+00:00')), 'prev_execution_date_success': <Proxy at 0x7fd58cbe2b08 with factory <function TaskInstance.get_template_context.<locals>.<lambda> at 0x7fd58cb90ea0>>, 'prev_start_date_success': <Proxy at 0x7fd58cb43c48 with factory <function TaskInstance.get_template_context.<locals>.<lambda> at 0x7fd58cb77a60>>, 'run_id': 'manual__2022-05-16T04:22:31.727612+00:00', 'task': <Task(PythonOperator): xcom_task_1>, 'task_instance': <TaskInstance: xcom_checker.xcom_task_1 2022-05-16T04:22:31.727612+00:00 [running]>, 'task_instance_key_str': 'xcom_checker__xcom_task_1__20220516', 'test_mode': False, 'ti': <TaskInstance: xcom_checker.xcom_task_1 2022-05-16T04:22:31.727612+00:00 [running]>, 'tomorrow_ds': '2022-05-17', 'tomorrow_ds_nodash': '20220517', 'ts': '2022-05-16T04:22:31.727612+00:00', 'ts_nodash': '20220516T042231', 'ts_nodash_with_tz': '20220516T042231.727612+0000', 'var': {'json': None, 'value': None}, 'yesterday_ds': '2022-05-15', 'yesterday_ds_nodash': '20220515', 'templates_dict': None}
+[2022-05-16 04:22:32,525] {python.py:151} INFO - Done. Returned value was: 2022-05-16T04:22:31.727612+00:00
+[2022-05-16 04:22:32,525] {xcom.py:229} ERROR - Could not serialize the XCom value into JSON. If you are using pickle instead of JSON for XCom, then you need to enable pickle support for XCom in your airflow config.
+[2022-05-16 04:22:32,525] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1344, in _execute_task
+    self.xcom_push(key=XCOM_RETURN_KEY, value=result)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1925, in xcom_push
+    session=session,
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/session.py", line 67, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/xcom.py", line 79, in set
+    value = XCom.serialize_value(value)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/xcom.py", line 226, in serialize_value
+    return json.dumps(value).encode('UTF-8')
+  File "/usr/local/lib/python3.6/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'DateTime' is not JSON serializable
+[2022-05-16 04:22:32,528] {taskinstance.py:1531} INFO - Marking task as FAILED. dag_id=xcom_checker, task_id=xcom_task_1, execution_date=20220516T042231, start_date=20220516T042232, end_date=20220516T042232
+[2022-05-16 04:22:32,555] {local_task_job.py:151} INFO - Task exited with return code 1

@@ -1,0 +1,26 @@
+[2022-05-15 21:56:59,274] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: GCPetlDAG.mkdir_hourly_op 2022-05-15T21:56:54.437298+00:00 [queued]>
+[2022-05-15 21:56:59,285] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: GCPetlDAG.mkdir_hourly_op 2022-05-15T21:56:54.437298+00:00 [queued]>
+[2022-05-15 21:56:59,285] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 21:56:59,285] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-05-15 21:56:59,285] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 21:56:59,290] {taskinstance.py:1087} INFO - Executing <Task(BashOperator): mkdir_hourly_op> on 2022-05-15T21:56:54.437298+00:00
+[2022-05-15 21:56:59,294] {standard_task_runner.py:52} INFO - Started process 52563 to run task
+[2022-05-15 21:56:59,296] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'GCPetlDAG', 'mkdir_hourly_op', '2022-05-15T21:56:54.437298+00:00', '--job-id', '28', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/my_gcpPipeLine.py', '--cfg-path', '/tmp/tmp6r9m_qol', '--error-file', '/tmp/tmpdheu5hcv']
+[2022-05-15 21:56:59,298] {standard_task_runner.py:77} INFO - Job 28: Subtask mkdir_hourly_op
+[2022-05-15 21:56:59,322] {logging_mixin.py:104} INFO - Running <TaskInstance: GCPetlDAG.mkdir_hourly_op 2022-05-15T21:56:54.437298+00:00 [running]> on host 7190ca705fc5
+[2022-05-15 21:56:59,359] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=msbeni
+AIRFLOW_CTX_DAG_ID=GCPetlDAG
+AIRFLOW_CTX_TASK_ID=mkdir_hourly_op
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-15T21:56:54.437298+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-05-15T21:56:54.437298+00:00
+[2022-05-15 21:56:59,360] {subprocess.py:52} INFO - Tmp dir root location: 
+ /tmp
+[2022-05-15 21:56:59,360] {subprocess.py:63} INFO - Running command: ['bash', '-c', "cd /opt/airflow/dags/data/ && mkdir -p '2022-05-15'"]
+[2022-05-15 21:56:59,366] {subprocess.py:75} INFO - Output:
+[2022-05-15 21:56:59,369] {subprocess.py:83} INFO - Command exited with return code 0
+[2022-05-15 21:56:59,377] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=GCPetlDAG, task_id=mkdir_hourly_op, execution_date=20220515T215654, start_date=20220515T215659, end_date=20220515T215659
+[2022-05-15 21:56:59,396] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-05-15 21:56:59,428] {local_task_job.py:151} INFO - Task exited with return code 0

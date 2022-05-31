@@ -1,0 +1,23 @@
+[2022-05-15 21:45:58,223] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: GCPetlDAG.create_path 2022-05-15T21:45:55.603550+00:00 [queued]>
+[2022-05-15 21:45:58,233] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: GCPetlDAG.create_path 2022-05-15T21:45:55.603550+00:00 [queued]>
+[2022-05-15 21:45:58,234] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 21:45:58,234] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-05-15 21:45:58,234] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 21:45:58,238] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): create_path> on 2022-05-15T21:45:55.603550+00:00
+[2022-05-15 21:45:58,243] {standard_task_runner.py:52} INFO - Started process 50725 to run task
+[2022-05-15 21:45:58,245] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'GCPetlDAG', 'create_path', '2022-05-15T21:45:55.603550+00:00', '--job-id', '10', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/my_gcpPipeLine.py', '--cfg-path', '/tmp/tmpu5gmhh5n', '--error-file', '/tmp/tmp7iahcmlw']
+[2022-05-15 21:45:58,247] {standard_task_runner.py:77} INFO - Job 10: Subtask create_path
+[2022-05-15 21:45:58,272] {logging_mixin.py:104} INFO - Running <TaskInstance: GCPetlDAG.create_path 2022-05-15T21:45:55.603550+00:00 [running]> on host 7190ca705fc5
+[2022-05-15 21:45:58,302] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=msbeni
+AIRFLOW_CTX_DAG_ID=GCPetlDAG
+AIRFLOW_CTX_TASK_ID=create_path
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-15T21:45:55.603550+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-05-15T21:45:55.603550+00:00
+[2022-05-15 21:45:58,654] {logging_mixin.py:104} INFO - 2022-05-15
+[2022-05-15 21:45:58,655] {python.py:151} INFO - Done. Returned value was: 2022-05-15
+[2022-05-15 21:45:58,676] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=GCPetlDAG, task_id=create_path, execution_date=20220515T214555, start_date=20220515T214558, end_date=20220515T214558
+[2022-05-15 21:45:58,699] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-05-15 21:45:58,740] {local_task_job.py:151} INFO - Task exited with return code 0

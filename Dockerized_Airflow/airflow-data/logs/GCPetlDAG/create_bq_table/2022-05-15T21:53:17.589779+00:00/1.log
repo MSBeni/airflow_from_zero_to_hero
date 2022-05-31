@@ -1,0 +1,23 @@
+[2022-05-15 21:53:24,736] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: GCPetlDAG.create_bq_table 2022-05-15T21:53:17.589779+00:00 [queued]>
+[2022-05-15 21:53:24,754] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: GCPetlDAG.create_bq_table 2022-05-15T21:53:17.589779+00:00 [queued]>
+[2022-05-15 21:53:24,755] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 21:53:24,755] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-05-15 21:53:24,755] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 21:53:24,763] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): create_bq_table> on 2022-05-15T21:53:17.589779+00:00
+[2022-05-15 21:53:24,773] {standard_task_runner.py:52} INFO - Started process 51983 to run task
+[2022-05-15 21:53:24,777] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'GCPetlDAG', 'create_bq_table', '2022-05-15T21:53:17.589779+00:00', '--job-id', '24', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/my_gcpPipeLine.py', '--cfg-path', '/tmp/tmp9rphjbcb', '--error-file', '/tmp/tmpudwjidh3']
+[2022-05-15 21:53:24,780] {standard_task_runner.py:77} INFO - Job 24: Subtask create_bq_table
+[2022-05-15 21:53:24,823] {logging_mixin.py:104} INFO - Running <TaskInstance: GCPetlDAG.create_bq_table 2022-05-15T21:53:17.589779+00:00 [running]> on host 7190ca705fc5
+[2022-05-15 21:53:24,888] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=msbeni
+AIRFLOW_CTX_DAG_ID=GCPetlDAG
+AIRFLOW_CTX_TASK_ID=create_bq_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-15T21:53:17.589779+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-05-15T21:53:17.589779+00:00
+[2022-05-15 21:53:30,984] {logging_mixin.py:104} INFO - <google.cloud.bigquery.job.load.LoadJob object at 0x7fd521ea3320>
+[2022-05-15 21:53:30,984] {python.py:151} INFO - Done. Returned value was: None
+[2022-05-15 21:53:30,990] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=GCPetlDAG, task_id=create_bq_table, execution_date=20220515T215317, start_date=20220515T215324, end_date=20220515T215330
+[2022-05-15 21:53:31,009] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-05-15 21:53:31,032] {local_task_job.py:151} INFO - Task exited with return code 0

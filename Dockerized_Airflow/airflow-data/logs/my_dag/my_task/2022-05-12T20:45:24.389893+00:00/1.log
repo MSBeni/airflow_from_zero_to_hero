@@ -1,0 +1,35 @@
+[2022-05-12 20:45:25,007] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: my_dag.my_task 2022-05-12T20:45:24.389893+00:00 [queued]>
+[2022-05-12 20:45:25,024] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: my_dag.my_task 2022-05-12T20:45:24.389893+00:00 [queued]>
+[2022-05-12 20:45:25,025] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-12 20:45:25,025] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-05-12 20:45:25,026] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-12 20:45:25,042] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): my_task> on 2022-05-12T20:45:24.389893+00:00
+[2022-05-12 20:45:25,050] {standard_task_runner.py:52} INFO - Started process 835 to run task
+[2022-05-12 20:45:25,056] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'my_dag', 'my_task', '2022-05-12T20:45:24.389893+00:00', '--job-id', '10', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/my_dag.py', '--cfg-path', '/tmp/tmpi77_ur0o', '--error-file', '/tmp/tmpbw6kpcos']
+[2022-05-12 20:45:25,059] {standard_task_runner.py:77} INFO - Job 10: Subtask my_task
+[2022-05-12 20:45:25,105] {logging_mixin.py:104} INFO - Running <TaskInstance: my_dag.my_task 2022-05-12T20:45:24.389893+00:00 [running]> on host 7b5fcf14949b
+[2022-05-12 20:45:25,171] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=my_dag
+AIRFLOW_CTX_TASK_ID=my_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-12T20:45:24.389893+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-05-12T20:45:24.389893+00:00
+[2022-05-12 20:45:25,171] {taskinstance.py:1481} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1137, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/my_dag.py", line 13, in _my_func
+    print(**context)
+TypeError: print() takes at most 4 arguments (33 given)
+[2022-05-12 20:45:25,173] {taskinstance.py:1531} INFO - Marking task as FAILED. dag_id=my_dag, task_id=my_task, execution_date=20220512T204524, start_date=20220512T204525, end_date=20220512T204525
+[2022-05-12 20:45:25,227] {local_task_job.py:151} INFO - Task exited with return code 1

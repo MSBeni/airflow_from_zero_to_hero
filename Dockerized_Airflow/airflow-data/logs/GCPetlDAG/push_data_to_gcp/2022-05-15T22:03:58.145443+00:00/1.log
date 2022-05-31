@@ -1,0 +1,23 @@
+[2022-05-15 22:04:19,128] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: GCPetlDAG.push_data_to_gcp 2022-05-15T22:03:58.145443+00:00 [queued]>
+[2022-05-15 22:04:19,139] {taskinstance.py:876} INFO - Dependencies all met for <TaskInstance: GCPetlDAG.push_data_to_gcp 2022-05-15T22:03:58.145443+00:00 [queued]>
+[2022-05-15 22:04:19,139] {taskinstance.py:1067} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 22:04:19,139] {taskinstance.py:1068} INFO - Starting attempt 1 of 1
+[2022-05-15 22:04:19,139] {taskinstance.py:1069} INFO - 
+--------------------------------------------------------------------------------
+[2022-05-15 22:04:19,144] {taskinstance.py:1087} INFO - Executing <Task(PythonOperator): push_data_to_gcp> on 2022-05-15T22:03:58.145443+00:00
+[2022-05-15 22:04:19,149] {standard_task_runner.py:52} INFO - Started process 53796 to run task
+[2022-05-15 22:04:19,151] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'GCPetlDAG', 'push_data_to_gcp', '2022-05-15T22:03:58.145443+00:00', '--job-id', '51', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/my_gcpPipeLine.py', '--cfg-path', '/tmp/tmpyazjuihl', '--error-file', '/tmp/tmpyykz47m8']
+[2022-05-15 22:04:19,154] {standard_task_runner.py:77} INFO - Job 51: Subtask push_data_to_gcp
+[2022-05-15 22:04:19,210] {logging_mixin.py:104} INFO - Running <TaskInstance: GCPetlDAG.push_data_to_gcp 2022-05-15T22:03:58.145443+00:00 [running]> on host 7190ca705fc5
+[2022-05-15 22:04:19,352] {taskinstance.py:1282} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=msbeni
+AIRFLOW_CTX_DAG_ID=GCPetlDAG
+AIRFLOW_CTX_TASK_ID=push_data_to_gcp
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-15T22:03:58.145443+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-05-15T22:03:58.145443+00:00
+[2022-05-15 22:04:19,820] {logging_mixin.py:104} INFO - New rows have been added.
+[2022-05-15 22:04:19,820] {python.py:151} INFO - Done. Returned value was: None
+[2022-05-15 22:04:19,848] {taskinstance.py:1191} INFO - Marking task as SUCCESS. dag_id=GCPetlDAG, task_id=push_data_to_gcp, execution_date=20220515T220358, start_date=20220515T220419, end_date=20220515T220419
+[2022-05-15 22:04:19,883] {taskinstance.py:1245} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-05-15 22:04:19,929] {local_task_job.py:151} INFO - Task exited with return code 0
